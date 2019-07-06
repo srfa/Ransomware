@@ -192,14 +192,12 @@ def checkinput(e1,root,keystring):
 		decrypt(keystring)
 		#close window	
 		root.destroy()
-		#sys.exit()
 	else:
 		delete()
 		#the below is really buggy so had to make a function to close window
 		incorrectpopup()
 		root.after(2001, killroot, root)
 		
-
 def incorrectpopup():
 	groot = Tk()
 	groot.geometry('200x80')
